@@ -49,6 +49,7 @@
   shell: "hammer subscription manifest-history --organization-id {{ organization_id }} | grep -i SUCCESS"
   register: manifest_status
   when: id is succeeded
+  ignore_errors: True
 
 #Upload the manifest to the satellite
 - name: "Configure | upload the manifest"

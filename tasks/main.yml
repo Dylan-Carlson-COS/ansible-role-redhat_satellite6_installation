@@ -1,5 +1,5 @@
 ---
-- include: set_facts.yml
+#- include: set_facts.yml
 - include: registration.yml
   when: satellite_connected
 - include: firewall.yml
